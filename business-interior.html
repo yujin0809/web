@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>코드덤 인테리어</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- 부트스트랩 아이콘 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Sunflower:wght@500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 네비게이션 시작 -->
+    <!-- <nav class="navbar navbar-expand fixed-top bg-white">
+        <a class="navbar-brand logo-font ms-4" href="index.html"><img src="images/logo.png" alt="logo" class="me-2">코드덤 인테리어</a>
+        <ul class="navbar-nav ms-auto me-4">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">프로필</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">인테리어</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">개인 공간</a></li>
+                    <li><a class="dropdown-item" href="#">비즈니스 공간</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">연락처</a></li>
+        </ul>
+    </nav> -->
+
+    <nav class="navbar navbar-expand-md fixed-top bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand logo-font" href="index.html">
+                <img src="images/logo.png" alt="logo">
+                코드덤 인테리어</a>
+
+            <button class="navbar-toggler" type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#menu-bar"
+                aria-controls="menu-bar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu-bar">
+                <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">프로필</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">인테리어</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="private-interior.html">개인 공간</a></li>
+                            <li><a class="dropdown-item" href="business-interior.html">비즈니스 공간</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">연락처</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </nav>
+    <!-- 네비게이션 끝 -->
+
+    <!-- 헤더 시작 -->
+    <div id="headerCarousel" class="mt-5 carousel slide carousel-fade">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/header1.jpg" class="d-block w-100" alt="header1">
+                <div class="carousel-caption text-md-start">
+                    <h1 class="d-block display-4">코드덤 인테리어</h1>
+                    <p class="d-none d-sm-block">Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/header2.jpg" class="d-block w-100" alt="header2">
+                <div class="carousel-caption">
+                    <h2 class="d-block">코드덤 인테리어</h2>
+                    <p class="d-none d-sm-block">Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/header3.jpg" class="d-block w-100" alt="header3">
+                <div class="carousel-caption">
+                    <h2 class="d-block">코드덤 인테리어</h2>
+                    <p class="d-none d-sm-block">Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/header4.jpg" class="d-block w-100" alt="header4">
+                <div class="carousel-caption">
+                    <h2 class="d-block">코드덤 인테리어</h2>
+                    <p class="d-none d-sm-block">Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/header5.jpg" class="d-block w-100" alt="header5">
+                <div class="carousel-caption">
+                    <h2 class="d-block">코드덤 인테리어</h2>
+                    <p class="d-none d-sm-block">Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#headerCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#headerCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- 헤더 끝 -->
+
+    <!-- 메인 섹션 시작 -->
+    <main class="container my-5">
+        <div class="row">
+            <!-- 프로필 바 섹션 시작 -->
+            <section class="col-md-5 col-lg-3 order-1 order-md-0">
+                <div class="bg-dark text-white text-center my-3 p-4 rounded">
+                    <img src="images/main-profile.jpg" alt="profile" class="img-fluid rounded-circle p-4">
+                    <h2 class="fs-4 py-3">코드덤 kim</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dignissimos perspiciatis cumque sed ducimus soluta! Culpa architecto quo sunt molestias.</p>
+                    <div class="d-flex justify-content-evenly fs-5 py-3">
+                        <a href="https://www.youtube.com/watch?v=6K_TeanL1Ds&list=PLJlrtcxIfzvetFUPGfzH96uyx2EpGEj6L&index=81" target="_blank" class="link-danger"><i class="bi bi-youtube"></i></a>
+                        <a href="https://www.youtube.com/watch?v=6K_TeanL1Ds&list=PLJlrtcxIfzvetFUPGfzH96uyx2EpGEj6L&index=81" target="_blank" class="link-primary"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.youtube.com/watch?v=6K_TeanL1Ds&list=PLJlrtcxIfzvetFUPGfzH96uyx2EpGEj6L&index=81" target="_blank" class="link-warning"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="card bg-dark text-white text-center">
+                    <div class="card-header">
+                        자격사항
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">자격사항1</li>
+                        <li class="list-group-item">자격사항2</li>
+                        <li class="list-group-item">자격사항3</li>
+                    </ul>
+                </div>
+
+                <div class="card bg-dark text-white text-center mt-3">
+                    <div class="card-header">
+                        경력사항
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <p class="text-muted m-1">2000-2010</p>
+                            <p class="m-1 fw-bold">Lorem, ipsum dolor.</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="text-muted m-1">2011-2020</p>
+                            <p class="m-1 fw-bold">Lorem, ipsum dolor.</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="text-muted m-1">2020-2022</p>
+                            <p class="m-1 fw-bold">Lorem, ipsum dolor.</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </section>
+            <!-- 프로필 바 섹션 끝 -->
+            <!-- 비즈니스 인테리어 섹션 시작 -->
+            <div class="col-md-7 col-lg-9 order-0 order-md-1">
+                <section class="text-center py-3">
+                    <h2 class="fs-1 fw-bold pb-2">비즈니스 공간 인테리어</h2>
+                    <p class="text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos numquam sequi aspernatur magni error reprehenderit soluta, doloremque dolor! Aliquam, quos!</p>
+                    <img src="images/business.jpg" alt="business" class="img-fluid my-4">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae earum eius incidunt! Consequuntur, minus consequatur dolores placeat rerum natus at soluta? Omnis tenetur quaerat facere illum eius iusto, totam sequi expedita sint tempore. Voluptates reprehenderit ipsum animi quisquam fuga corrupti illo nesciunt asperiores tempora natus dolore assumenda, facere excepturi neque.</p>
+                </section>
+                <!-- -------------- -->
+                <hr class="text-muted">
+                <!-- -------------- -->
+                <section class="row">
+                    <div class="col-lg-9 mx-auto">
+                        
+                        <div class="text-center pt-5 pb-3">
+                            <h2 class="fs-1 fw-bold pb-3">자주 묻는 질문</h2>
+                            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ducimus dignissimos saepe animi hic cum quidem, porro architecto officia odit!</p>
+                        </div>
+
+                        <div class="accordion accordion-flush" id="accordionExample">
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        질문 1
+                                    </button>
+                                </h3>
+                                <div id="collapseOne" class="accordion-collapse collapse show">
+                                    <div class="accordion-body">
+                                        <h4>Q. Lorem ipsum dolor sit?</h4>
+                                        <p>A. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum dolorem minus minima hic? Quia quo blanditiis numquam aspernatur explicabo doloribus!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        질문 2
+                                    </button>
+                                </h3>
+                                <div id="collapseTwo" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <h4>Q. Lorem ipsum dolor sit?</h4>
+                                        <p>A. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum dolorem minus minima hic? Quia quo blanditiis numquam aspernatur explicabo doloribus!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        질문 3
+                                    </button>
+                                </h3>
+                                <div id="collapseThree" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <h4>Q. Lorem ipsum dolor sit?</h4>
+                                        <p>A. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum dolorem minus minima hic? Quia quo blanditiis numquam aspernatur explicabo doloribus!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        질문 4
+                                    </button>
+                                </h3>
+                                <div id="collapseFour" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <h4>Q. Lorem ipsum dolor sit?</h4>
+                                        <p>A. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum dolorem minus minima hic? Quia quo blanditiis numquam aspernatur explicabo doloribus!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+            <!-- 비즈니스 인테리어 섹션 끝 -->
+        </div>
+
+    </main>
+    <!-- 메인 섹션 끝 -->
+
+    <!-- 푸터 섹션 시작 -->
+    <!-- <footer class="bg-dark pt-5">
+        <div class="container">
+            <div class="row justify-content-around">
+                <section class="col-md-4 text-center text-white mb-4">
+                    <h5 class="mb-3"><img src="images/logo.png" alt="logo" class="me-2">코드덤 인테리어</h5>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. laudantium quo, voluptas perferendis.</p>
+                </section>
+                <section class="col-md-4 text-center text-white mb-4">
+                    <h5 class="fw-bold fs-4 mb-3">About Us</h5>
+                    <a href="#" alt="프로필" class="text-decoration-none text-white">프로필</a><br>
+                    <a href="#" alt="프라이빗 인테리어" class="text-decoration-none text-white">프라이빗 인테리어</a><br>
+                    <a href="#" alt="비즈니스 인테리어" class="text-decoration-none text-white">비즈니스 인테리어</a><br>
+                    <a href="#" alt="연락처" class="text-decoration-none text-white">연락처</a>
+                </section>
+                <section class="col-md-4 text-center text-white mb-4">
+                    <p class="fw-bold fs-5 mb-3">소셜 미디어</p>
+                    <a href="#" alt="유튜브" class="text-decoration-none text-white">유튜브</a><br>
+                    <a href="#" alt="블로그" class="text-decoration-none text-white">블로그</a><br>
+                    <a href="#" alt="인스타그램" class="text-decoration-none text-white">인스타그램</a><br>
+                    <a href="#" alt="페이스북" class="text-decoration-none text-white">페이스북</a>
+                </section>
+                <div class="text-center text-white py-4">
+                    <p><i class="bi bi-c-circle pe-1"></i>ALL RIGHT RESERVED BY <span style="font-family: 'Sunflower', sans-serif; color: rgb(41, 194, 194);">코드덤 인테리어</span></p>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="index.html"><img src="images/logo.png" alt="logo" class="my-3"></a>
+                    <a href="index.html" class="link-light text-decoration-none fs-5 logo-font">코드덤 인테리어</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sequi, harum totam voluptatem molestias optio.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold my-3">About Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="profile.html" class="link-light text-decoration-none">프로필</a></li>
+                        <li><a href="private-interior.html" class="link-light text-decoration-none">프라이빗 인테리어</a></li>
+                        <li><a href="business-interior.html" class="link-light text-decoration-none">비즈니스 인테리어</a></li>
+                        <li><a href="contact.html" class="link-light text-decoration-none">연락처</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold my-3">소셜 미디어</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.youtube.com/" class="link-light text-decoration-none">유튜브</a></li>
+                        <li><a href="https://www.youtube.com/" class="link-light text-decoration-none">블로그</a></li>
+                        <li><a href="https://www.youtube.com/" class="link-light text-decoration-none">인스타그램</a></li>
+                        <li><a href="https://www.youtube.com/" class="link-light text-decoration-none">페이스북</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <p><i class="bi bi-c-circle pe-1"></i>ALL RIGHT RESERVED BY <span class="logo-font text-info">코드덤 인테리어</span></p>
+        </div>
+    </footer>
+    <!-- 푸터 섹션 끝 -->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>

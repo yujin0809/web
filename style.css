@@ -1,0 +1,46 @@
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5{
+    font-family: 'Sunflower', sans-serif;
+}
+
+.nav-link:hover, .nav-link.active{
+    color: darkblue !important;
+    font-weight: bold;
+}
+
+
+#headerCarousel img{
+    filter: grayscale(50%);
+}
+#headerCarousel:hover img{
+    filter: grayscale(0%);
+}
+
+.logo-font{
+    font-family: 'Sunflower', sans-serif;
+}
+
+.card-img-top{
+    transition: transform .7s;
+}
+.card-img-top:hover{
+    transform: scale(1.1);
+}
+
+.img-banner{
+    background-image: url(images/card-banner.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.contact-bg{
+
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(images/contact-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
